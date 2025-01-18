@@ -8,7 +8,7 @@
 }
 
 .container{
-    width: 1280px;
+    max-width:1280px;
     margin: 0 auto;
 }
 
@@ -19,7 +19,7 @@ body{
     background-color: #e55473;
     border: none;
     border-radius: 5px;
-    padding: 11px;
+    padding: 0.85rem;
     font-weight: 600;
     font-size: 1rem;
     color: #fff;
@@ -50,8 +50,23 @@ body{
     margin-bottom: 20px;
 }
 .hero-img {
-    width: 460px;
+    max-width: 460px;
 }
 .hero-img img{
     width: 100%;
+}
+
+
+/* --------------------- Responsive for small device----------------------- */
+
+@media screen and (max-width:576px) {
+    .hero{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .hero-contant{
+        padding: 0;
+    }
+    .hero-contant h3{
+        padding-right: 10px;
+    }
 }
