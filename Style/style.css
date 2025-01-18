@@ -56,17 +56,48 @@ body{
     width: 100%;
 }
 
+ /* ----------------feature section ------------------------------- */
+.feature-title{
+    width: 600px;
 
+}
+
+.feaure-card {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: end;
+}
+.feaure-card .card{
+    border-top-left-radius: 50%;
+     border-top-right-radius: 50%;
+     width: 460px;
+}
+.feaure-card .card img{
+    width: 100%;
+}
+.feaure-card .card1{
+    background: rgba(167, 33, 98, 0.15);
+}
+
+.feaure-card .card2{
+    background: rgba(5, 151, 160, 0.15);
+}
+.feaure-card .card3{
+    background-color: rgba(5, 151, 160, 0.15);
+}
 /* --------------------- Responsive for small device----------------------- */
 
 @media screen and (max-width:576px) {
     .hero{
         grid-template-columns: repeat(1,1fr);
+        text-align: center;
+        padding: 0px 10px;
     }
     .hero-contant{
         padding: 0;
     }
     .hero-contant h3{
-        padding-right: 10px;
+        padding-right: 0;
     }
 }
